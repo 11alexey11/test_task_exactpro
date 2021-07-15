@@ -179,8 +179,13 @@
 .main-mission-image {
   padding-top: 3px;
 }
+.main-mission-image__img {
+  width: 455px;
+  height: 303px;
+}
 .main-activity {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   padding-top: 40px;
   padding-bottom: 38px;
@@ -214,6 +219,7 @@
 }
 .main-activity-content-blocks {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
   padding-top: 22px;
@@ -495,6 +501,151 @@
 }
 .footer-content-copyright__text__span {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 1100px) {
+  .container {
+    max-width: 768px;
+  }
+
+  .header-logo-a__text {
+    display: none;
+  }
+
+  .main-mission-image__img {
+    width: 364px;
+    height: 242px;
+  }
+  .main-activity-content-blocks-item {
+    max-width: 370px;
+    margin-bottom: 15px;
+  }
+  .main-practice-arrowbtn {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    left: 93%;
+    bottom: 42px;
+  }
+  .main-practice-arrowbtn::after {
+    top: 18px;
+    left: 16px;
+    width: 12px;
+    height: 12px;
+  }
+
+  .footer-content-annex {
+    padding-right: 0;
+  }
+}
+@media screen and (max-width: 892px) {
+  .container {
+    max-width: 684px;
+  }
+
+  .main-mission-image__img {
+    width: 319px;
+    height: 212px;
+  }
+  .main-activity-content-blocks-item {
+    max-width: 330px;
+  }
+
+  .footer-content {
+    align-items: center;
+  }
+  .footer-content-annex {
+    flex-direction: column;
+    padding-left: 0;
+  }
+  .footer-content-annex-logo {
+    padding-bottom: 10px;
+  }
+  .footer-content-annex-tm {
+    flex-direction: column;
+  }
+  .footer-content-annex-tm-contacts {
+    padding: 25px 0;
+  }
+  .footer-content-copyright__text {
+    padding: 0 150px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 544px;
+  }
+
+  .header-contacts-list-item-a__text {
+    display: none;
+  }
+
+  .nav-list-item-a {
+    padding: 0 10px;
+  }
+
+  .main-activity-content-blocks-item {
+    max-width: 260px;
+  }
+  .main-practice-arrowbtn {
+    display: none;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 576px;
+  }
+
+  .title .container {
+    justify-content: center;
+  }
+
+  .nav {
+    height: auto;
+  }
+  .nav .container {
+    padding-right: 0;
+  }
+  .nav-list {
+    flex-direction: column;
+    width: 100%;
+  }
+  .nav-list-item-a {
+    padding: 10px;
+  }
+
+  .main-mission .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-mission-content-p {
+    text-align: justify;
+    padding-right: 0;
+  }
+  .main-mission-image__img {
+    width: 273px;
+    height: 182px;
+  }
+  .main-activity-content-blocks {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-experience-content-p {
+    text-align: justify;
+  }
+  .main-practice .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .footer-content-copyright__text {
+    padding: 0 50px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .header-contacts-list-item-a {
+    padding: 0 10px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
